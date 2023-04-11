@@ -8,6 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Jogos</title>
     <link rel="stylesheet" href="estiloopb.css" />
+    <style>
+        li.serie {
+            color: green;
+        }
+        li.filme {
+            color: blue;
+        }
+
+        li.jogos, span.jogos {
+            color: orangered;
+        }
+
+        .jogo {
+            color: orangered;
+        }
+
+        p > .jogo {
+            border-bottom: dashed;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,26 +47,27 @@
     <main>
         <p>Ultimos Jogos que joguei:</p>
         <ol>
-            <li>Red Dead Redemption 2</li>
-            <li>Horizon Zero Dawn</li>
-            <li>Detroit: Become Human</li>
-            <li>GTA V</li>
+            <li class="jogos">Red Dead Redemption 2</li>
+            <li class="jogos">Horizon Zero Dawn</li>
+            <li class="jogos">Detroit: Become Human</li>
+            <li class="jogos">GTA V</li>
         </ol>
+        <p>E o <span class="jogos">RDR2</span> foi meu preferido</p>
 
         <p>Filmes e Séries que assisti:</p>
         <ul>
             <li>
                 <div>Filmes</div>
-                <ul  style="color: blue">
-                    <li>Interestellar</li>
-                    <li>Panico VI</li>
+                <ul>
+                    <li class="filme">Interestellar</li>
+                    <li class="filme">Panico VI</li>
                 </ul>
             </li>    
             <li >
                 <div>Séries</div>
-                <ul  style="color: green">
-                    <li>The Last of Us</li>
-                    <li>Black Mirror</li>
+                <ul>
+                    <li class="serie">The Last of Us</li>
+                    <li class="serie">Black Mirror</li>
                 </ul>
             </li>    
         </ul>
